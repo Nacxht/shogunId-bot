@@ -1,0 +1,3 @@
+Note: Feel free to...
+
+# ShogunID Discord Bot
