@@ -1,5 +1,5 @@
 import { Client } from "discord.js";
-import { snakeToCamel } from "../utils/camel_caser.js";
+import { snakeToCamel } from "../utils/camel_case.js";
 import { commands } from "../commands/_init.js";
 import { SlashCommand } from "../../../types/SlashCommand.js";
 import { logger } from "../utils/logger.js";
