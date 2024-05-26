@@ -11,7 +11,7 @@ I have also created a simplified flowchart for the overall system of this bot. T
     <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-system_design.png?raw=true" alt="System Design">
 </details>
 
-## Feature
+# Feature
 
 Here is a list and flowchart of the features of this bot:
 **Moderation:**
