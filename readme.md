@@ -8,6 +8,7 @@ I have also created a simplified flowchart for the overall system of this bot. T
 
 <details>
     <summary>Flowchart</summary>
+    
     ![System Design](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-system_design.png?raw=true)
 </details>
 
@@ -21,6 +22,7 @@ Here is a list and flowchart of the features of this bot:
         <details>
             <summary>Kick</summary>
             <br />
+            
             ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_kick.png?raw=true)
         </details>
     </li>
@@ -28,6 +30,7 @@ Here is a list and flowchart of the features of this bot:
         <details>
             <summary>Ban</summary>
             <br />
+            
             ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_ban.png?raw=true)
         </details>
     </li>
@@ -35,6 +38,7 @@ Here is a list and flowchart of the features of this bot:
         <details>
             <summary>Purge</summary>
             <br />
+            
             ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_purge.png?raw=true)
         </details>
     </li>
@@ -42,6 +46,7 @@ Here is a list and flowchart of the features of this bot:
         <details>
             <summary>Timeout</summary>
             <br />
+            
             ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_timeout.png?raw=true)
         </details>
     </li>
