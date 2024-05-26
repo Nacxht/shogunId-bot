@@ -1,16 +1,18 @@
 import {
     ActionRowBuilder,
     BaseGuildTextChannel,
-    BaseInteraction,
     ButtonBuilder,
     CommandInteraction,
+    GuildMember,
 } from "discord.js";
 import {
     banComponents,
     kickComponents,
     purgeComponents,
+    timeoutComponents,
 } from "../components/moderation_components.js";
 import { logger } from "../utils/logger.js";
+import ms from "ms";
 
 export async function kickController(interaction: CommandInteraction) {
     const { target, reason } = {
@@ -140,7 +142,7 @@ export async function purgeController(interaction: CommandInteraction) {
     };
 
     // Components
-    const button: ActionRowBuilder<ButtonBuilder> = await purgeComponents();
+    const buttons: ActionRowBuilder<ButtonBuilder> = await purgeComponents();
 
     try {
         if (value < 1 || value > 100) {
@@ -151,7 +153,7 @@ export async function purgeController(interaction: CommandInteraction) {
 
         const response = await interaction.reply({
             content: `Are you sure wan't to bulk delete ${value} messages?`,
-            components: [button],
+            components: [buttons],
             ephemeral: true,
         });
 
@@ -169,11 +171,56 @@ export async function purgeController(interaction: CommandInteraction) {
         }
 
         const channel: BaseGuildTextChannel = interaction.channel as BaseGuildTextChannel;
-        return await channel.bulkDelete(value);
+        await channel.bulkDelete(value);
+        return await interaction.deleteReply();
     } catch (error: any) {
         switch (error.name) {
             default:
                 logger.error(`Error at "Purge"\nError:\n${error}\nName: ${error.name}`);
+        }
+    }
+}
+
+export async function timeoutController(interaction: CommandInteraction) {
+    const { target, time, reason } = {
+        target: interaction.options.getUser("target", true),
+        time: String(interaction.options.get("time", true).value),
+        reason: String(interaction.options.get("reason")?.value) || "No reason provided",
+    };
+
+    // Components
+    const buttons: ActionRowBuilder<ButtonBuilder> = await timeoutComponents();
+
+    try {
+        const response = await interaction.reply({
+            content: `Are you sure want to timeout ${target}?\nDuration: "${time}"\nFor reason: "${reason}"`,
+            components: [buttons],
+            ephemeral: true,
+        });
+
+        const confirmation = await response.awaitMessageComponent({
+            filter: (i) => i.user.id === interaction.user.id,
+            time: 60_000,
+        });
+
+        if (confirmation.customId !== "confirm") {
+            return interaction.editReply({
+                content: `Cancelled to timeout ${target}`,
+                components: [],
+            });
+        }
+
+        const member = interaction.options.getMember("target") as GuildMember;
+        await member.timeout(ms(time), reason);
+
+        return await interaction.editReply({
+            content: `${target} has been timeout'ed`,
+            components: [],
+        });
+    } catch (error: any) {
+        switch (error.name) {
+            default:
+                logger.error(`Error at "Timeout"\nError:\n${error}\nName: ${error.name}`);
         }
     }
 }

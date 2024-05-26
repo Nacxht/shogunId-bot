@@ -3,6 +3,7 @@ import {
     banController,
     kickController,
     purgeController,
+    timeoutController,
 } from "../controller/moderation_controller.js";
 
 export const kick = {
@@ -52,4 +53,33 @@ export const purge = {
         .setDMPermission(false),
 
     execute: purgeController,
+};
+
+export const timeout = {
+    data: new SlashCommandBuilder()
+        .setName("timeout")
+        .setDescription("Timeout a member in your server")
+        .addUserOption((option) =>
+            option.setName("target").setDescription("The member to timeout").setRequired(true)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("time")
+                .setDescription("How long member will be timeout'ed")
+                .setRequired(true)
+                .setChoices(
+                    { name: "30 Minutes", value: "30m" },
+                    { name: "1 Hour", value: "1h" },
+                    { name: "1 Day", value: "1d" },
+                    { name: "1 Week", value: "7d" },
+                    { name: "20 Days", value: "20d" }
+                )
+        )
+        .addStringOption((option) => option.setName("reason").setDescription("Timeout reason"))
+        .setDefaultMemberPermissions(
+            PermissionFlagsBits.KickMembers | PermissionFlagsBits.BanMembers
+        )
+        .setDMPermission(false),
+
+    execute: timeoutController,
 };
