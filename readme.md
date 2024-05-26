@@ -13,7 +13,7 @@ I have also created a simplified flowchart for the overall system of this bot. T
 
 # Feature
 
-Here is a list and flowchart of the features of this bot:
+Here is a list and flowchart of the features of this bot (I haven't created flowcharts for some commands yet):
 **Moderation:**
 <ul>
     <li>
@@ -77,6 +77,9 @@ Here is a list and flowchart of the features of this bot:
         </details>
     </li>
 </ul>
+
+# How To Use
+* coming soon, not now 😅
 
 # Dependencies
 Here is a list of dependencies I use:
