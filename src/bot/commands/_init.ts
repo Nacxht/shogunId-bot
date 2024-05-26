@@ -5,8 +5,9 @@ import { logger } from "../utils/logger.js";
 // List of commands
 import * as miscCommand from "./misc.js";
 import * as moderationCommand from "./moderation.js";
+import * as helpCommand from "./help.js";
 
-export const commands = Object.assign({}, miscCommand, moderationCommand);
+export const commands = Object.assign({}, miscCommand, moderationCommand, helpCommand);
 const commandsData = Object.values(commands).map((command) => command.data);
 
 export async function commandInit() {
