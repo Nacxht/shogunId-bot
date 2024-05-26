@@ -8,10 +8,8 @@ I have also created a simplified flowchart for the overall system of this bot. T
 
 <details>
     <summary>Flowchart</summary>
-    
-    ![System Design](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-system_design.png?raw=true)
+    <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-system_design.png?raw=true" alt="System Design">
 </details>
-
 
 ## Feature
 
@@ -22,32 +20,28 @@ Here is a list and flowchart of the features of this bot:
         <details>
             <summary>Kick</summary>
             <br />
-            
-            ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_kick.png?raw=true)
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_kick.png?raw=true" alt="Kick Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Ban</summary>
             <br />
-            
-            ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_ban.png?raw=true)
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_ban.png?raw=true" alt="Ban Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Purge</summary>
             <br />
-            
-            ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_purge.png?raw=true)
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_purge.png?raw=true" alt="Purge Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Timeout</summary>
             <br />
-            
-            ![Flowchart](https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_timeout.png?raw=true)
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_timeout.png?raw=true" alt="Timeout Flowchart">
         </details>
     </li>
 </ul>
@@ -58,34 +52,34 @@ Here is a list and flowchart of the features of this bot:
         <details>
             <summary>Ping</summary>
             <br />
-            ![]()
+            <img src="" alt="Ping Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>User Info</summary>
             <br />
-            ![]()
+            <img src="" alt="User Info Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Server Info</summary>
             <br />
-            ![]()
+            <img src="" alt="Server Info Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Avatar</summary>
             <br />
-            ![]()
+            <img src="" alt="Avatar Flowchart">
         </details>
     </li>
 </ul>
 
 # Dependencies
-Here is a list of dependencies i use
+Here is a list of dependencies I use:
 1. Main Dependencies
     - [discord.js](https://www.npmjs.com/package/discord.js)
     - [dotenv](https://www.npmjs.com/package/dotenv)
@@ -95,4 +89,3 @@ Here is a list of dependencies i use
     - [@types/ms](https://www.npmjs.com/package/@types/ms)
     - [@types/node](https://www.npmjs.com/package/@types/node)
     - [typescript](https://www.npmjs.com/package/typescript)
-
