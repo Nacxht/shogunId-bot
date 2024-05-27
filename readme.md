@@ -18,7 +18,7 @@ Here is a list and flowchart of the features of this bot (I haven't created flow
 <ul>
     <li>
         <details>
-            <summary>Kick (yes voting system, but it's not done yet)</summary>
+            <summary>Kick (yes it has voting system, but it's not done yet)</summary>
             <br />
             <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_kick.png?raw=true" alt="Kick Flowchart">
         </details>
@@ -52,28 +52,28 @@ Here is a list and flowchart of the features of this bot (I haven't created flow
         <details>
             <summary>Ping</summary>
             <br />
-            <img src="" alt="Ping Flowchart">
+            No Flowchart
         </details>
     </li>
     <li>
         <details>
             <summary>User Info</summary>
             <br />
-            <img src="" alt="User Info Flowchart">
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_info.png?raw=true" alt="User Info Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Server Info</summary>
             <br />
-            <img src="" alt="Server Info Flowchart">
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_info.png?raw=true" alt="Server Info Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Avatar</summary>
             <br />
-            <img src="" alt="Avatar Flowchart">
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_avatar.png?raw=true" alt="Avatar Flowchart">
         </details>
     </li>
 </ul>
