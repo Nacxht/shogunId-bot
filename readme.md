@@ -59,21 +59,21 @@ Here is a list and flowchart of the features of this bot (I haven't created flow
         <details>
             <summary>User Info</summary>
             <br />
-            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_info.png?raw=true" alt="User Info Flowchart">
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_info.drawio.png?raw=true" alt="User Info Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Server Info</summary>
             <br />
-            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_info.png?raw=true" alt="Server Info Flowchart">
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_info.drawio.png?raw=true" alt="Server Info Flowchart">
         </details>
     </li>
     <li>
         <details>
             <summary>Avatar</summary>
             <br />
-            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_avatar.png?raw=true" alt="Avatar Flowchart">
+            <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_avatar.drawio.png?raw=true" alt="Avatar Flowchart">
         </details>
     </li>
 </ul>
