@@ -18,7 +18,7 @@ Here is a list and flowchart of the features of this bot (I haven't created flow
 <ul>
     <li>
         <details>
-            <summary>Kick (yes it has voting system, but it's not done yet)</summary>
+            <summary>Kick</summary>
             <br />
             <img src="https://github.com/Nacxht/shogunId-bot/blob/main/flowcharts/shogun_id-bot_kick.png?raw=true" alt="Kick Flowchart">
         </details>
@@ -77,9 +77,6 @@ Here is a list and flowchart of the features of this bot (I haven't created flow
         </details>
     </li>
 </ul>
-
-# How To Use
-* coming soon, not now 😅
 
 # Dependencies
 Here is a list of dependencies I use:
